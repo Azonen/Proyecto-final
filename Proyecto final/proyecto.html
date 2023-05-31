@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proyecto.css">
+   
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home" onclick="home()">Home</li>
+            <li>Page: <select onchange="apiRick(this.value)" id="select">
+                <script>
+                    for(let i=1;i<= 42;i++){
+                        document.write(`<option value="${i}">${i}</option>`)
+                    }
+                </script>
+            </select></li>
+            <li>
+
+
+                    <input id="name"type="text" placeholder="ingresa un nombre"/>
+                    <button onclick="getOne()">Search</button>
+
+
+               
+            </li>
+        </ul>
+    </nav>
+    <div id="resultado"></div>
+    <script src="./proyecto.js"></script>
+</body>
+</html>
